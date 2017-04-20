@@ -1,0 +1,3 @@
+@import url('main.calendar.css');
+@import url('maxh725.calendar.css') screen and (max-height: 725px);
+@import url('maxw1024.calendar.css') screen and (max-width: 1024px);

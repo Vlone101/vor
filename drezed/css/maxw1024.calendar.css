@@ -1,0 +1,48 @@
+.c-nav__month, .c-nav__year {
+    font-size: 23px;
+}
+
+.c-button_period {
+    font-size: 19px;
+}
+
+.c-button, .team {
+    font-size: 10px;
+}
+
+.c-button_period {
+    width: 105px;
+}
+
+.c-day-table {
+    font-size: 10px;
+}
+
+.c-day-table__text {
+    font-size: 10px;
+}
+
+.c-nav__arrow-left, .c-nav__arrow-right {
+    width: 16px;
+    height: 17px;
+}
+
+.c-days__item {
+    font-size: 17px;
+}
+
+.c-dates__item {
+    font-size: 8px;
+}
+
+.c-event-block, .c-mark {
+    font-size: 9px;
+}
+
+.c-icon-button {
+    font-size: 10px;
+}
+
+.c-form-event {
+    min-width: 403px;
+}

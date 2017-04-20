@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.chat.css">
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>
+    <script src="js/script.chat-input.js"></script>
+    <script src="js/script.chat-history.js"></script>
+</head>
+<body class="chat-page">
+    <div class="wrapper">
+        <nav class="left-sidebar">
+            <ul class="left-sidebar__tool-list">
+                <li class="left-sidebar__tool">
+                    <a href="#" class="left-sidebar__link">
+                        <span class="left-sidebar__icon">&#xf0eb;</span>
+                        <span class="left-sidebar__title">Project</span>
+                    </a>
+                </li>
+                <li class="left-sidebar__tool">
+                    <a href="chat.html" class="left-sidebar__link">
+                        <span class="left-sidebar__icon left-sidebar_icon-chat">&#xf086;</span>
+                        <span class="left-sidebar__title">Chat</span>
+                    </a>
+                </li>
+                <li class="left-sidebar__tool">
+                    <a href="backlog.html" class="left-sidebar__link">
+                        <span class="left-sidebar__icon left-sidebar_icon-backlog">&#xf0ae;</span>
+                        <span class="left-sidebar__title">Backlog</span>
+                    </a>
+                </li>
+                <li class="left-sidebar__tool">
+                    <a href="table.html" class="left-sidebar__link">
+                        <span class="left-sidebar__icon left-sidebar_icon-board">&#xf022;</span>
+                        <span class="left-sidebar__title">Board</span>
+                    </a>
+                </li>
+                <li class="left-sidebar__tool">
+                    <a href="calendar.html" class="left-sidebar__link">
+                        <span class="left-sidebar__icon left-sidebar_icon-calendar">&#xf073;</span>
+                        <span class="left-sidebar__title">Calendar</span>
+                    </a>
+                </li>
+                <li class="left-sidebar__tool">
+                    <a href="#" class="left-sidebar__link">
+                        <span class="left-sidebar__icon left-sidebar_icon-settings">&#xf085;</span>
+                        <span class="left-sidebar__title">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="right-wrapper">
+            <header class="header">
+                <img src="img/logo.png" alt="logo" class="header__logo">
+                <div class="header__toolbar">
+                    <div class="header__switch-container">
+                        <label class="header__switch">
+                            <input class="header__checkbox" type="checkbox" name="header-switcher" checked>
+                            <span class="header__slider"></span>
+                        </label>
+                    </div>
+                    <div class="header__icons">
+                        <span class="header__new-alert">
+                            &#xf0f3;
+                            <span class="header__alert-count">29</span>
+                        </span>
+                        <img src="img/avatar.png" alt="Ava" class="header__avatar">
+                        <span class="header__logout">&#xf08b;</span>
+                    </div>
+                </div>
+            </header>
+            <!-- End of sidebar and main header -->
+                <div class="m-chat-main">
+                    <!-- Chat header -->
+                    <div class="m-main__header">
+                        <p class="m-header__contact-name">Contact</p>
+                        <div class="m-header__right-block">
+                            <p class="m-search__icon">&#xf22c;</p>
+                            <input type="text" class="m-right-block__search" placeholder="Search">
+                            <a href="#" class="m-right-block__settings">&#xf013;</a>
+                        </div>
+                    </div>
+                    <!-- Chat stream -->
+                    <div class="m-main__steram">
+                        <div class="m-main-stream--history">
+                            <div class="m-main-stream-history-w">
+                                <div class="m-main-stream--mess-stack">
+                                    <div class="m-main-mess-stack--photo">
+                                        <div class="m-main-mess-stack--photo_small fl_l">
+                                            <a href="#">
+                                                <img src="img/m-profile-img.png" alt="user-photo">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="m-main-mess-stack--content">
+                                        <div class="m-main-mess-stack--info">
+                                            <div class="m-main-mess-stack--name">
+                                                <a href="#" class="m-main-mess-stack--lnk">Name</a>
+                                                <span class="m-main-mess-stack--time">
+                                                    <a href="#" class="m-main-mess-stack-time--lnk">07:20 PM</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <ul class="m-main-mess-stack--message">
+                                            <li class="m-main-message_number">
+                                                <div class="m-main-message--text">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="m-main-stream--mess-stack">
+                                    <div class="m-main-mess-stack--photo">
+                                        <div class="m-main-mess-stack--photo_small fl_l">
+                                            <a href="#">
+                                                <img src="img/m-profile-img.png" alt="user-photo">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="m-main-mess-stack--content">
+                                        <div class="m-main-mess-stack--info">
+                                            <div class="m-main-mess-stack--name">
+                                                <a href="#" class="m-main-mess-stack--lnk">Name</a>
+                                                <span class="m-main-mess-stack--time">
+                                                    <a href="#" class="m-main-mess-stack-time--lnk">07:22 PM</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <ul class="m-main-mess-stack--message">
+                                            <li class="m-main-message_number">
+                                                <div class="m-main-message--text">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Chat strem -->
+                    <!-- Chat input -->
+                    <div class="m-message-input">
+                        <form class="m-form">
+                            <button class="m-form__add">+
+                            <!-- <img src="img/plus.png"> -->
+                            </button>
+                            <!-- <input type="submit" name="+"> -->
+                            <textarea rows="3" placeholder="Write your message" wrap="soft" name="message-input" id="message-input" class="m-form__input"></textarea>
+                            <a class="m-form__smile" href="#">
+                                &#9786;
+                            </a>
+                        </form>
+                    </div>
+                    <!-- End of Input-->
+                </div>
+                <!-- Chat Sidebar-->
+                <div class="m-chat-sidebar">
+                    <div class="m-chat-idebar__groups">
+                        <div class="m-title">
+                            <p class="m-title__item">Group</p>
+                        </div>
+                        <div class="m-add-group">
+                            <img src="img/m-batton-add-group.png" alt="add group">
+                        </div>
+                        <div class="m-groups">
+                            <ul class="m-group">
+                                <li class="m-group__name">Group 1
+                                    <ul class="m-group__contact">
+                                        <li class="m-group__contact-name"><span>Contact 1</span></li>
+                                        <li class="m-group__contact-name"><span>Contact 2</span></li>
+                                        <li class="m-group__contact-name m-group__contact-name_offline"><span>Contact 3</span></li>
+                                        <li class="m-group__contact-name m-group__contact-name_offline"><span>Contact 4</span></li>
+                                    </ul>
+                                </li>
+                                <li class="m-group__name">Group 2</li>
+                                <li class="m-group__name">Group 3</li>
+                                <li class="m-group__name">Group 4</li>
+                                <li class="m-group__name">Group 5</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="m-chat-sidebar__contacts">
+                       <div class="m-title m-title_pos">
+                        <p class="m-title-item">Contacts</p>
+                    </div>
+                    <div class="m-add-contact">
+                        <img src="img/m-batton-add-group.png" alt="add group">
+                    </div>
+                    <div class="m-contacts">
+                        <ul class="m-contacts__list">
+                            <li class="m-contacts__item">
+                                <a href="#" class="m-contacts__link">Contact 1</a>
+                                <button class="m-contacts__btn close-contact-btn" hidden>x</button>
+                            </li>
+                            <li class="m-contacts__item">
+                                <a href="#" class="m-contacts__link">Contact 2</a>
+                                <button class="m-contacts__btn close-contact-btn" hidden>x</button>
+                            </li>
+                            <li class="m-contacts__item m-contacts__contact-name_offline">
+                                <a href="#" class="m-contacts__link">Contact 3</a>
+                                <button class="m-contacts__btn close-contact-btn" hidden>x</button>
+                            </li>
+                            <li class="m-contacts__item m-contacts__contact-name_offline">
+                                <a href="#" class="m-contacts__link">Contact 4</a>
+                                <button class="m-contacts__btn close-contact-btn" hidden>x</button>
+                            </li>
+                            <li class="m-contacts__item">
+                                <a href="#" class="m-contacts__link">Contact 5</a>
+                                <button class="m-contacts__btn close-contact-btn" hidden>x</button>
+                            </li>
+                        </ul>
+                        <div class="m-search">
+                            <form class="m-contacts__form" action="#" method="get">
+                                <input type="search" name="contacts__search" id="contacts__search" class="m-contacts__search" placeholder="Search">
+                                <p class="m-search__icon_contacts">&#xf22c;</p>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                 <!-- End Chat sidebar -->
+                 </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Board</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.table.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body>
+<div class="wrapper">
+    <nav class="left-sidebar">
+        <ul class="left-sidebar__tool-list">
+            <li class="left-sidebar__tool">
+                <a href="#" class="left-sidebar__link">
+                    <span class="left-sidebar__icon">&#xf0eb;</span>
+                    <span class="left-sidebar__title">Project</span>
+                </a>
+            </li>
+            <li class="left-sidebar__tool">
+                <a href="chat.html" class="left-sidebar__link">
+                    <span class="left-sidebar__icon left-sidebar_icon-chat">&#xf086;</span>
+                    <span class="left-sidebar__title">Chat</span>
+                </a>
+            </li>
+            <li class="left-sidebar__tool">
+                <a href="backlog.html" class="left-sidebar__link">
+                    <span class="left-sidebar__icon left-sidebar_icon-backlog">&#xf0ae;</span>
+                    <span class="left-sidebar__title">Backlog</span>
+                </a>
+            </li>
+            <li class="left-sidebar__tool">
+                <a href="table.html" class="left-sidebar__link">
+                    <span class="left-sidebar__icon left-sidebar_icon-board">&#xf022;</span>
+                    <span class="left-sidebar__title">Board</span>
+                </a>
+            </li>
+            <li class="left-sidebar__tool">
+                <a href="calendar.html" class="left-sidebar__link">
+                    <span class="left-sidebar__icon left-sidebar_icon-calendar">&#xf073;</span>
+                    <span class="left-sidebar__title">Calendar</span>
+                </a>
+            </li>
+            <li class="left-sidebar__tool">
+                <a href="#" class="left-sidebar__link">
+                    <span class="left-sidebar__icon left-sidebar_icon-settings">&#xf085;</span>
+                    <span class="left-sidebar__title">Settings</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="right-wrapper">
+        <header class="header">
+            <img src="img/logo.png" alt="logo" class="header__logo">
+            <div class="header__toolbar">
+                <div class="header__switch-container">
+                    <label class="header__switch">
+                        <input class="header__checkbox" type="checkbox" name="header-switcher" checked>
+                        <span class="header__slider"></span>
+                    </label>
+                </div>
+                <div class="header__icons">
+                        <span class="header__new-alert">
+                            &#xf0f3;
+                            <span class="header__alert-count">29</span>
+                        </span>
+                    <img src="img/avatar.png" alt="Ava" class="header__avatar">
+                    <span class="header__logout">&#xf08b;</span>
+                </div>
+            </div>
+        </header>
+        <!-- Кінець хедера 						 -->
+            <!-- Main Board Block-->
+            <div class="t-main">
+                <div class="t-grid">
+                    <section class="t-grid-item t-grid-item__stories">
+                        <div class="t-grid-item__header">
+                            <h2>Stories</h2>
+                        </div>
+                        <article class="t-story_card t-card_green">
+                            <p class="t-card__text">Как пользователь
+                                продукта, я хочу иметь возможность редактировать задачу</p>
+                            <input type="text" placeholder="+ Add task" class="t-story_card__input" name="add-task">
+                            <div class="t-task_card__small t-card_green">
+                                <p class="t-card__text">Пользователь может изменять название задачи</p>
+                            </div>
+                            <div class="t-task_card__small t-card_green">
+                                <p class="t-card__text">Пользователь может изменять описание задачи
+                                </p>
+                            </div>
+                            <a href="#" class="t-story_card__button_collapse">&#xf147;</a>
+                        </article>
+                        <article class="t-story_card t-card_green">
+                            <p class="t-card__text">Как пользователь продукта, я хочу иметь возможность изменять статус задачи</p>
+                            <a href="#" class="t-story_card__button_collapse">&#xf196;</a>
+                        </article>
+                        <article class="t-story_card t-card_green">
+                            <p class="t-card__text">Как пользователь продукта, я хочу иметь возможность редактировать задачу</p>
+                            <a href="#" class="t-story_card__button_collapse">&#xf196;</a>
+                        </article>
+                        <article class="t-story_card t-card_yellow ">
+                            <p class="t-card__text">Как пользователь продукта,  я хочу удалять задачу, что б она не была среди нужных задач</p>
+                            <a href="#" class="t-story_card__button_collapse">&#xf196;</a>
+                        </article>
+                    </section>
+                    <section class="t-grid-item t-grid-item__todo">
+                        <div class="t-grid-item__header">
+                            <h2>To do</h2>
+                        </div>
+                        <article class="t-task_card__medium t-card_green clearfix">
+                            <a href="#" class="t-task_card__button_menu">&#xf101;</a>
+                            <p class="t-card__text">Как пользователь продукта, я хочу видеть только свои задачи</p>
+                            <div class="t-task_card__footer">
+                                <img src="img/avatar.png" alt="" class="t-task_card__avatar_executor">
+                                <p class="t-task_card__due_to">Due to 23.06.2017</p>
+                                <a href="#" class="t-task_card__chat_button">&#xf0e5;</a>
+                            </div>
+                        </article>
+                        <article class="t-task_card__medium t-card_green clearfix">
+                            <a href="#" class="t-task_card__button_menu">&#xf101;</a>
+                            <p class="t-card__text">Как пользователь продукта я могу перемещать задачу в колонку in progress</p>
+                            <div class="t-task_card__footer">
+                                <img src="img/avatar.png" alt="" class="t-task_card__avatar_executor">
+                                <p class="t-task_card__due_to">Due to 23.06.2017</p>
+                                <a href="#" class="t-task_card__chat_button">&#xf0e5;</a>
+                            </div>
+                        </article>
+                        <article class="t-task_card__medium t-card_green clearfix">
+                            <a href="#" class="t-task_card__button_menu">&#xf101;</a>
+                            <p class="t-card__text">Пользователь может изменять название задачи</p>
+                            <div class="t-task_card__footer">
+                                <img src="img/avatar.png" alt="" class="t-task_card__avatar_executor">
+                                <p class="t-task_card__due_to">Due to 23.06.2017</p>
+                                <a href="#" class="t-task_card__chat_button">&#xf0e5;</a>
+                            </div>
+                        </article>
+                        <article class="t-task_card__medium t-card_green clearfix">
+                            <a href="#" class="t-task_card__button_menu">&#xf101;</a>
+                            <p class="t-card__text">Пользователь может изменять описание задачи</p>
+                            <div class="t-task_card__footer">
+                                <img src="img/avatar.png" alt="" class="t-task_card__avatar_executor">
+                                <p class="t-task_card__due_to">Due to 23.06.2017</p>
+                                <a href="#" class="t-task_card__chat_button">&#xf0e5;</a>
+                            </div>
+                        </article>
+                        <article class="t-task_card__medium t-card_green clearfix">
+                            <a href="#" class="t-task_card__button_menu">&#xf101;</a>
+                            <p class="t-card__text">Пользователь может изменять приоритет задачи</p>
+                            <div class="t-task_card__footer">
+                                <img src="img/avatar.png" alt="" class="t-task_card__avatar_executor">
+                                <p class="t-task_card__due_to">Due to 23.06.2017</p>
+                                <a href="#" class="t-task_card__chat_button">&#xf0e5;</a>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="t-grid-item t-grid-item__in-progres">
+                        <div class="t-grid-item__header">
+                            <h2>In process</h2>
+                        </div>
+                    </section>
+                    <section class="t-grid-item t-grid-item__to-veryfy">
+                        <div class="t-grid-item__header">
+                            <h2>To verify</h2>
+                        </div>
+                    </section>
+                    <section class="t-grid-item t-grid-item__done">
+                        <div class="t-grid-item__header">
+                            <h2>Done</h2>
+                        </div>
+                    </section>
+                    <div class="t-main__overlay t-main__overlay_display">
+                        <div class="t-taskbar">
+                            <section class="t-taskbar__left">
+                                <div class="t-taskbar__priority">
+                                    <label class="t-taskbar__header t-taskbar__header_left" for="t-priority">Приоритет:</label>
+                                    <select name="priority" id="t-priority">
+                                        <option value="pririty-1">Высокий</option>
+                                        <option value="pririty-2">Средний</option>
+                                        <option value="pririty-3">Низкий</option>
+                                        <option value="pririty-4">Срочный</option>
+                                    </select>
+                                </div>
+                                <div class="t-taskbar__deadline">
+                                    <label class="t-taskbar__header t-taskbar__header_left" for="t-deadline">Срок исполнения:</label>
+                                    <input type="date" name="deadline" id="t-deadline">
+                                </div>
+    
+                                <h3 class="t-taskbar__header t-taskbar__header_left">Ответственный:</h3>
+                                <div class="t-taskbar__person_responsible">
+                                    <a href="#"><img src="img/avatar.png" alt="" class="t-taskbar__avatar"></a>
+                                    <div class="t-taskbar__responsible">
+                                        <h4 class="t-taskbar__responsible_name">Кот Андрей</h4>
+                                        <span class="t-taskbar__responsible_position">Разработчик</span>
+                                    </div>
+                                    <a href="#" class="t-taskbar__open-chat">&#xf0e5;</a>
+                                </div>
+    
+                                <h3 class="t-taskbar__header t-taskbar__header_left">Исполнитель:</h3>
+                                <div class="t-taskbar__person_performer">
+                                    <a href="#"><img src="img/avatar.png" alt="" class="t-taskbar__avatar"></a>
+                                    <div class="t-taskbar__performer">
+                                        <h4 class="t-taskbar__performer_name">Кот Андрей</h4>
+                                        <span class="t-taskbar__performer_position">Разработчик</span>
+                                    </div>
+                                    <a href="#" class="t-taskbar__open-chat">&#xf0e5;</a>
+                                </div>
+                
+                                <div class="t-taskbar__info">
+                                    <div class="t-taskbar__info_epic">
+                                        <h4 class="t-taskbar__info_header">EPIC 3</h4>
+                                        <p class="t-taskbar__info_paragraph">Пользователь может работать с задачами (создать, удалить, закрыть, изменить, переместить, добавлять коментарии....</p>
+                                    </div>
+                                    <div class="t-taskbar__info_story">
+                                        <h4 class="t-taskbar__info_header">STORY:</h4>
+                                        <p class="t-taskbar__info_paragraph">Как пользователь продукта, я хочу иметь возможность изменять статус задачи, что б видеть прогресс прохождения....</p>
+                                    </div>
+                                </div>
+                            </section>
+            
+                            <section class="t-taskbar__right">
+                                <label class="t-taskbar__header">Название:</label>
+                                <textarea class="t-taskbar__desc" placeholder="+ Add header">Как пользователь продукта я могу перемещать задачу в колонку in progress</textarea>
+                                <label class="t-taskbar__header">Описание:</label>
+                                <textarea class="t-taskbar__desc t-taskbar__desc_textarea" placeholder="+ Add description">Как пользователь продукта я могу перемещать задачу в колонку in progress|</textarea>
+                
+                                <label class="t-taskbar__header">Чек-лист:</label>
+                                <textarea class="t-taskbar__desc t-taskbar__desc_checklist" placeholder="+ Add task">Как пользователь продукта я могу перемещать|</textarea>
+                
+                                <div class="t-taskbar__checkbox">
+                                    <input type="checkbox" name="tasks-to-do" id="toDo1" value="toDo" class="t-taskbar__checkbox_input">
+                                    <label for="toDo1" class="t-taskbar__checkbox_label">Анимация карточки</label>
+                                </div>
+                                <div class="t-taskbar__checkbox">
+                                    <input type="checkbox" name="tasks-to-do" id="done1" value="done" class="t-taskbar__checkbox_input" checked>
+                                    <label for="done1" class="t-taskbar__checkbox_label">Реализовать перемещение с колонки в колонку</label>
+                                </div>
+                
+                                <div class="t-taskbar__btn">
+                                    <a href="" class="t-taskbar__btn_delete"><span class="btn-icon">&#xf014;</span><span class="btn-text"> удалить</span></a>
+                                    <a href="" class="t-taskbar__btn_undo"><span class="btn-icon">&#xf0e2;</span><span class="btn-text"> отменить</span></a>
+                                    <a href="" class="t-taskbar__btn_save"><span class="btn-icon">&#xf0c7;</span><span class="btn-text"> сохранить</span></a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of main board block -->
+        </div>
+    </div>
+<script src="js/script.table.js"></script>
+</body>
+</html>

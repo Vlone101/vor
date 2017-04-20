@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calendar</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.calendar.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="left-sidebar">
+            <ul class="left-sidebar__tool-list">
+                <li class="left-sidebar__tool">
+                    <a href="#" class="left-sidebar__link">
+                        <span class="left-sidebar__icon">&#xf0eb;</span>
+                        <span class="left-sidebar__title">Project</span>
+                    </a>
+                </li>
+                <li class="left-sidebar__tool">
+                    <a href="chat.html" class="left-sidebar__link">
+                        <span class="left-sidebar__icon left-sidebar_icon-chat">&#xf086;</span>
+                        <span class="left-sidebar__title">Chat</span>
+                    </a>
+                </li>
+                <li class="left-sidebar__tool">
+                    <a href="backlog.html" class="left-sidebar__link">
+                        <span class="left-sidebar__icon left-sidebar_icon-backlog">&#xf0ae;</span>
+                        <span class="left-sidebar__title">Backlog</span>
+                    </a>
+                </li>
+                <li class="left-sidebar__tool">
+                    <a href="table.html" class="left-sidebar__link">
+                        <span class="left-sidebar__icon left-sidebar_icon-board">&#xf022;</span>
+                        <span class="left-sidebar__title">Board</span>
+                    </a>
+                </li>
+                <li class="left-sidebar__tool">
+                    <a href="calendar.html" class="left-sidebar__link">
+                        <span class="left-sidebar__icon left-sidebar_icon-calendar">&#xf073;</span>
+                        <span class="left-sidebar__title">Calendar</span>
+                    </a>
+                </li>
+                <li class="left-sidebar__tool">
+                    <a href="#" class="left-sidebar__link">
+                        <span class="left-sidebar__icon left-sidebar_icon-settings">&#xf085;</span>
+                        <span class="left-sidebar__title">Settings</span>
+                    </a>
+                </li>
+            </ul>
+	    </nav>
+        <div class="right-wrapper">
+            <header class="header">
+                <img src="img/logo.png" alt="logo" class="header__logo">
+                <div class="header__toolbar">
+                    <div class="header__switch-container">
+                        <label class="header__switch">
+                            <input class="header__checkbox" type="checkbox" name="header-switcher" checked>
+                            <span class="header__slider"></span>
+                        </label>
+                    </div>
+                    <div class="header__icons">
+                        <span class="header__new-alert">
+                            &#xf0f3;
+                            <span class="header__alert-count">29</span>
+                        </span>
+                        <img src="img/avatar.png" alt="Ava" class="header__avatar">
+                        <span class="header__logout">&#xf08b;</span>
+                    </div>
+                </div>
+            </header>
+			<!-- Кінець хедера 						 -->
+
+			<!-- Main Calendar Block-->
+			<div class="cdr-main">
+
+
+				<!-- Сітка календаря + навігація -->
+				<div class="c-nav">
+					<div class="c-nav__month">
+						<img src="img/arrow-left.png" alt="" class="c-nav__arrow-left">
+						<span>March</span>
+						<img src="img/arrow-right.png" alt="" class="c-nav__arrow-right">
+					</div>
+					<div class="c-nav__year">
+						<span>2017</span>
+					</div>
+					<div class="c-button-panel">
+						<button class="c-button_period">Day</button>
+						<button class="c-button_period">Week</button>
+						<button class="c-button_period active">Month</button>
+						<button class="c-button_period c-button_settings">Settings</button>
+					</div>
+				</div>
+			<div class="c-workspace">
+				<div class="c-wrapper">
+					<div class="c-days">
+						<div class="c-days__item">MON</div>
+						<div class="c-days__item">TUE</div>
+						<div class="c-days__item">WED</div>
+						<div class="c-days__item">THU</div>
+						<div class="c-days__item">FRI</div>
+						<div class="c-days__item">SAT</div>
+						<div class="c-days__item">SUN</div>
+					</div>
+					<div class="c-dates">
+						<div class="c-dates__item prev-date">
+							<span class="c-dates__text">27</span>
+						</div>
+						<div class="c-dates__item prev-date">
+							<span class="c-dates__text">28</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">1</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">2</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">3</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">4</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">5</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">6</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">7</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">8</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">9</span>
+
+							<!-- Вспливаюче вікно -->
+							<div class="c-box">
+								<div class="c-event">
+									<div class="c-event-block">
+										<span class="c-event-block__event-color"></span>
+										<p class="c-event-block__name-event">Sprint</p>
+									</div>
+									<div class="c-hide-block">
+										<h5 class="c-hide-block__header-title">Start sprint </h5>
+										<span class="c-hide-block__title">When:</span>
+										<div class="c-time-event">
+											<span class="c-time-event__event-data">16.03.2017-17.03.2017</span>
+										</div>
+										<div class="c-hide-block__buttons">
+											<button class="c-button c-button--button-delete">
+											<span class="c-icon-button c-icon-button_black">&#xf1f8;</span>
+											<span>Delete</span>
+											</button>
+											<button class="c-button c-button_button-edit">
+											<span class="c-icon-button c-icon-button_black">&#xf044;</span>
+											<span>Edit</span>
+											</button>
+										</div>
+										<div class="c-hide-block__close-button"> </div>
+									</div>
+								</div>
+							</div>
+							<!-- Кінець вспливаючого вікна -->
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">10</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">11</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">12</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">13</span>
+							<!-- Вспливаюче вікно -->
+							<div class="c-box">
+								<div class="c-event">
+									<div class="c-event-block">
+										<div class="c-mark c-mark_veb">Vebinar</div>
+									</div>
+									<div class="c-hide-block">
+										<h5 class="c-hide-block__header-title">Vebinar Soft skills </h5>
+										<span class="c-hide-block__title">When:</span>
+										<div class="c-time-event">
+											<span class="c-time-event__event-data">MON 30.03.2017</span>
+										</div>
+										<div class="c-hide-block__buttons">
+											<button class="c-button c-button--button-delete">
+											<span class="c-icon-button c-icon-button_black">&#xf1f8;</span>
+											<span>Delete</span>
+											</button>
+											<button class="c-button c-button_button-edit">
+											<span class="c-icon-button c-icon-button_black">&#xf044;</span>
+											<span>Edit</span>
+											</button>
+										</div>
+										<div class="c-hide-block__close-button"> </div>
+									</div>
+								</div>
+							</div>
+							<!-- Кінець вспливаючого вікна -->
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">14</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">15</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">16</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">17</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">18</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">19</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">20</span>
+							<div class="c-mark">Standup</div>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">21</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">22</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">23</span>
+							<div class="c-mark">Standup</div>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">24</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">25</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">26</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">27</span>
+							<div class="c-mark">Standup</div>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">28</span>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">29</span>
+						</div>
+						<div class="c-dates__item today">
+							<span class="c-dates__text ">30</span>
+							<div class="c-mark c-mark_demo">Demo</div>
+						</div>
+						<div class="c-dates__item">
+							<span class="c-dates__text">31</span>
+							<div class="c-mark c-mark_retro">Retro</div>
+						</div>
+						<div class="c-dates__item prev-date">
+							<span class="c-dates__text">1</span>
+						</div>
+						<div class="c-dates__item prev-date">
+							<span class="c-dates__text">2</span>
+						</div>
+					</div>
+				</div>
+				<!-- Кінець сітки календаря  -->
+
+				<!-- Блок з кнопками подій  -->
+				<div class="c-buttons-bar">
+					<button class="c-button c-button_create-event c-button_create">
+						<span class="c-icon-button c-calendar-icon">&#xf271;</span>
+						<span>Create</span>
+					</button>
+					<button class="c-button c-button_create-event c-button_standup">
+						<span class="c-icon-button c-calendar-icon">&#xf183;</span>
+						<span>Standup</span>
+					</button>
+					<button class="c-button c-button_create-event c-button_demo">
+						<span class="c-icon-button c-calendar-icon">&#xf03d;</span>
+						<span>Demo</span>
+					</button>
+					<button class="c-button c-button_create-event c-button_retro">
+						<span class="c-icon-button c-calendar-icon">&#xf201;</span>
+						<span>Retro</span>
+					</button>
+					<div class=" c-button c-button_calendars">
+						<span class="calendar__title">My calendars</span>
+					</div>
+					<div class=" c-button c-button_calendars">
+						<span class="calendar__title">Other calendars</span>
+					</div>
+					<div class="c-button c-button_create-event">
+						<span>Free time team</span>
+					</div>
+				</div>
+				<!-- Кінець блока з кнопками  -->
+      </div>
+			</div>
+			<!-- End of main calendar block -->
+		</div>
+	</div>
+	<!-- <script src="js/calendar-generation.js"></script> -->
+</body>
+
+</html>

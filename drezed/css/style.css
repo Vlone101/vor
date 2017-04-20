@@ -1,0 +1,361 @@
+/* --- Reset CSS --- */
+
+@import url('reset.css');
+
+/* --- set 100% to html & body to fit site to screen */
+
+html, body {
+    height: 100%;
+}
+
+/* --- fonts --- */
+
+@font-face {
+    font-family: 'Awesome';
+    src: url('../fonts/Awesome/fontawesome-webfont.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/Awesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Awesome/fontawesome-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/Awesome/fontawesome-webfont.woff') format('woff'); /* Pretty Modern Browsers */
+}
+
+/* --- end fonts --- */
+
+/* --- clearfix for float elements --- */
+
+.clearfix::after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+/* --- wrapper for minimum width --- */
+
+.wrapper {
+    display: table;
+    width: 100%;
+    min-width: 1024px;
+    height: 100%;
+}
+
+
+/* --- left sidebar --- */
+
+.left-sidebar {
+    display: table-cell;
+    width: 10.62vh; /* 77px for 1024x725*/
+    min-width: 77px;
+    border-right: .966vh solid #86af49; /* 7px for 1024x725 */
+    background: #44883d;
+    text-align: center;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+/* --- wrapper for header and main block --- */
+
+.right-wrapper {
+    display: table-cell;
+    background: #e1e1e1;
+    vertical-align: top;
+}
+
+.left-sidebar__tool-list {
+    margin-top: 80px;
+}
+
+.left-sidebar__tool {
+    position: relative;
+    margin-top: 20%;
+}
+
+.left-sidebar__link {
+    display: block;
+    width: 6.21vh; /* 45px for 1024x725*/
+    min-width: 45px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.left-sidebar__icon-container {
+    display: block;
+    height: 5.1vh; /* 37px for 1024x725 */
+    min-height: 37px;
+    border: 1px solid #c8dcc6;
+    border-radius: 7px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.left-sidebar__link:hover > .left-sidebar__icon {
+    transition: .3s;
+    background: #86af49;
+}
+
+/*.left-sidebar__icon {*/
+    /*display: inline-block;*/
+    /*color: #fff;*/
+    /*font-family: Awesome, sans-serif;*/
+    /*font-size: 4.83vh;  35px for 1024x725*/
+/*    line-height: 5.2vh; /* 37px for 1024x725 */
+    /*text-align: center;*/
+/*}*/
+
+.left-sidebar__icon {
+    display: block;
+    height: 5.1vh; /* 37px for 1024x725 */
+    min-height: 37px;
+    border: 1px solid #c8dcc6;
+    border-radius: 7px;
+    color: #fff;
+    font-family: Awesome, sans-serif;
+    font-size: 4.83vh; /* 35px for 1024x725*/
+    line-height: 5.2vh; /* 37px for 1024x725*/
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.left-sidebar_icon-chat {
+    font-size: 4.41vh; /* 32px for 1024x725*/
+}
+
+.left-sidebar_icon-backlog,
+.left-sidebar_icon-board {
+    font-size: 4.276vh; /* 31px for 1024x725*/
+}
+
+.left-sidebar_icon-calendar,
+.left-sidebar_icon-settings {
+    font-size: 4vh; /* 29px for 1024x725*/
+}
+
+.left-sidebar__title {
+    margin-right: -100%;
+    margin-left: -100%;
+    color: #fff;
+    font-family: Verdana, sans-serif;
+    font-size: 1.24vh; /* 9px for 1024x725*/
+    line-height: 1.655vh; /* 12px for 1024x725*/
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: top;
+}
+
+.header {
+    position: relative;
+    height: 7.28vh;
+    min-height: 53px;
+    background: #8a9a9a;
+    line-height: 7.28vh;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .35);
+    z-index: 20;
+}
+
+.header__logo {
+    margin: 15px 0 0 30px;
+}
+
+.header__toolbar {
+    height: 7.28vh;
+    min-height: 53px;
+    float: right;
+    line-height: 7.28vh;
+}
+
+.header__switch-container {
+    display: inline-block;
+    height: 4.85vh;
+    min-height: 35px;
+    padding-right: 23px;
+    border-right: 1px solid #fff;
+    line-height: 4.85vh;
+    vertical-align: middle;
+}
+
+.header__icons {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.header__logout,
+.header__new-alert {
+    display: inline-block;
+    margin: 0 .98vw;
+    color: #fff;
+    font-family: Awesome;
+    font-size: 30px;
+    line-height: 7.28vh;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.header__avatar {
+    display: inline-block;
+    height: 6.8vh;
+    margin-top: 2px;
+    line-height: 15vh;
+}
+
+.header__new-alert {
+    position: relative;
+    font-size: 4.88vh;
+}
+
+.header__alert-count {
+    position: absolute;
+    top: 38%;
+    left: 30%;
+    width: 1vw;
+    height: 1vw;
+    color: #4ebb1d;
+    font-size: 1.95vh;
+    font-weight: 900;
+    line-height: 1.5vh;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* The switch - the box around the slider */
+
+.header__switch {
+    display: inline-block;
+    position: relative;
+    width: 3.42vw;
+    min-width: 35px;
+    height: 2.07vh;
+    min-height: 15px;
+    line-height: 2.07vh;
+    vertical-align: middle;
+}
+
+/* Hide default HTML checkbox */
+
+.header__checkbox {
+    display: none;
+}
+
+/* The slider */
+
+.header__slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: .4s;
+    border-radius: 4.68vh;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.header__slider::before {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 2.34vh;
+    min-width: 17px;
+    height: 2.34vh;
+    min-height: 17px;
+    transition: .4s;
+    border-radius: 50%;
+    background-color: #5c8a03;
+    content: '';
+}
+
+.header__checkbox:checked + .header__slider {
+    background-color: #82b21e;
+}
+
+.header__checkbox:focus + .header__slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+.header__checkbox:checked + .header__slider::before {
+    transform: translateX(calc(3.42vw - 2.34vh));
+}
+
+@media screen and (max-height: 725px) {
+    .left-sidebar {
+        border-right: 7px solid #86af49;
+    }
+
+    .header__logout,
+    .header__new-alert {
+        font-size: 30px;
+    }
+
+    .header__alert-count {
+        font-size: 11px;
+    }
+
+    .left-sidebar__icon {
+        font-size: 35px;
+        line-height: 37px;
+    }
+
+    .left-sidebar__icon2 {
+        font-size: 35px;
+        line-height: 37px;
+    }
+
+    .left-sidebar_icon-chat {
+        font-size: 32px;
+    }
+
+    .left-sidebar_icon-backlog {
+        font-size: 31px;
+    }
+
+    .left-sidebar_icon-calendar,
+    .left-sidebar_icon-settings {
+        font-size: 28px;
+    }
+
+    .left-sidebar__title {
+        font-size: 9px;
+        line-height: 12px;
+    }
+
+    .header {
+        line-height: 53px;
+    }
+
+    .header__toolbar {
+        height: 53px;
+        line-height: 53px;
+    }
+
+    .header__switch {
+        line-height: 15px;
+    }
+
+    .header__switch-container {
+        line-height: 35px;
+    }
+
+    .header__slider {
+        border-radius: 34px;
+    }
+
+    .header__logout,
+    .header__new-alert {
+        line-height: 53px;
+    }
+
+    .header__avatar {
+        height: 49px;
+    }
+
+    .header__alert-link {
+        height: 35px;
+        margin: 9px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header__checkbox:checked+.header__slider::before {
+        transform: translateX(20px);
+    }
+}

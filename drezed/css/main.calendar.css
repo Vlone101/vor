@@ -1,0 +1,621 @@
+/*Callendar CSS*/
+
+.cdr-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-workspace {
+  display: flex;
+}
+
+.c-wrapper {
+    width: 88%;
+    height: 92%;
+}
+
+.c-buttons-bar {
+    width: 12%;
+}
+
+/*Загальні стилі для кнопки */
+
+.c-button {
+    padding: 7px;
+    background-color: #86af49;
+    /* Green */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.0174vw;
+    text-align: center;
+    display: inline-block;
+    /*line-height: 5.08vh;*/
+    font-family: 'Verdana';
+    text-decoration: none;
+    width: 8vw;
+    min-width: 82px;
+    /*height: 5.08vh;*/
+    outline: none;
+    cursor: pointer;
+}
+
+/*-------------------------------*/
+
+/*Кнопки перемикання режимів*/
+.c-nav {
+    height: 10%;
+    margin-top: 1.4vh;
+    margin-bottom: 1.8vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-nav__month {
+    margin-left: 10%;
+    text-align: center;
+    color: #82b21e;
+    text-shadow: 0px 4px 3.8px rgba(0, 0, 0, 0.1);
+    font-family: Verdana;
+    font-size: 2.34vw;
+
+}
+
+.c-nav__arrow-left {
+    width: 1.56vw;
+    height: 1.66vw;
+}
+
+.c-nav__arrow-right {
+    width: 1.56vw;
+    height: 1.66vw;
+}
+
+.c-nav__year {
+    color: #82b21e;
+    text-shadow: 0px 4px 3.8px rgba(0, 0, 0, 0.1);
+    font-family: Verdana;
+    font-size: 2.34vw;
+    flex-grow: 1;
+    margin-left: 4%;
+}
+
+.c-button-panel {
+    display: flex;
+}
+
+.c-button_period {
+    width: 10.25vw;
+    margin-left: 0.1vw;
+    padding: 4px 0;
+    border: 1px solid #949494;
+    background-color: #e1e1e1;
+    font-size: 1.95vw;
+    color: #82b21e;
+    cursor: pointer;
+    outline: none;
+}
+
+.c-button_period.active {
+    background-color: #b7caca;
+}
+
+.c-button_period:hover {
+  background-color: #6d7979;
+}
+
+.c-button_settings {
+    margin-left: 6.2vw;
+    margin-right: 0.8vw;
+}
+/*Кінець кнопок перемикання режимів */
+
+/*Стилі для сітки календаря*/
+
+.c-days {
+    margin-left: 14px;
+    display: flex;
+}
+
+.c-days__item {
+    color: #fafbf7;
+    border: 1px solid #949494;
+    background: #86af49;
+    font-family: Verdana;
+    margin-right: -1px;
+    margin-top: -1px;
+    width: 14.3%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 7px 0;
+    font-size: 1.75vw;
+}
+
+.c-dates {
+    margin-left: 14px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c-dates__item {
+    min-height: 103px;
+    font-family: Verdana;
+    font-size: 0.78vw;
+    box-sizing: border-box;
+    margin-top: -1px;
+    margin-right: -1px;
+    border: 1px solid #949494;
+    color: #000;
+    height: 15.15vh;
+    width: 14.3%;
+    background: #fff;
+}
+
+.c-dates__text {
+    display: block;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.today {
+    background: #e8e8e8;
+}
+
+.prev-date {
+    background: rgba(238, 222, 162, 0.3);
+    color: #908d8d;
+}
+
+.c-mark {
+    font-family: Verdana,sans-serif;
+    font-size: 0.97vw;
+    margin-top: 5px;
+    text-align: center;
+    padding: 4px 0;
+    background: #d9ab9e;
+    color: #fcf9f9;
+}
+
+.c-mark_demo {
+    background: #698cc8;
+}
+
+.c-mark_retro {
+     background: #52ac62;
+}
+
+.c-mark_veb {
+    background: #f26c4f;
+}
+
+/*Кінець стилів для сітки календаря*/
+
+/*Стилі для кнопок */
+
+.c-button_create-event {
+    margin: 1.5vh auto;
+    padding: 10px 0;
+    display: block;
+}
+
+
+.c-button_create {
+    background: #86af49;
+
+}
+
+/*.c-button span {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 13%;
+}
+*/
+.c-button_standup {
+    background: #d9ab9e;
+
+}
+
+.c-button_demo {
+    background: #698cc8;
+
+}
+
+.c-button_retro {
+    background: #52ac62;
+    
+}
+
+.team {
+    font-size: 0.8vw;
+}
+
+.c-button_calendars {
+    display: block;
+    width: 10vw;
+    height: 8vw;
+    min-height: 116px;
+    color: #0a0a0a;
+    background: none;
+    margin: 1.5vh auto;
+}
+
+/*.c-button_free-time {
+    position: relative;
+}*/
+
+/*Кінець стилів для кнопок*/
+
+/*Стилі для вспливаючого вікна*/
+
+.c-box {
+    font-family: Verdana, sans-serif;
+    margin: 0 auto;
+    position: relative;
+}
+
+.c-event {
+    position: relative;
+}
+
+.c-event-block {
+    font-size: 1vw;
+    position: relative;
+}
+
+.c-event-block__data {
+    display: block;
+}
+
+.c-event-block__name-event {
+    clear: both;
+    margin: 0;
+    text-align: center;
+}
+
+.c-event-block:active ~ .c-hide-block {
+    display: block;
+}
+
+.c-event-block__event-color {
+    background-color: red;
+    border-radius: 1vw;
+    float: right;
+    display: block;
+    height: 0.7vw;
+    margin-right: 10px;
+    width: 0.7vw;
+}
+
+.c-hide-block {
+    background: #e8e8e8;
+    border: 1px solid #5f7278;
+    display: none;
+    font-size: 1.07vw;
+    padding-left: 2vw;
+    padding-top: 1vw;
+    height: 19vh;
+    top: 0;
+    width: 23vw;
+    position: absolute;
+    left: 23px;
+    color: #070708;
+    font-family: Verdana, sans-serif;
+}
+
+.c-hide-block:hover {
+    display: block;
+}
+
+.c-hide-block__header-title {
+    padding-bottom: 10px;
+}
+
+.c-hide-block__title {
+    color: #8a9a9a;
+    float: left;
+    padding-right: 10px;
+    margin: 0;
+}
+
+.c-hide-block__buttons {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.c-button--button-delete {
+    background: #c7b6ae;
+    color: #070708;
+    font-size: 1.07vw;
+    text-transform: uppercase;
+    border: none;
+}
+
+.c-button_button-edit {
+    background: #b2d179;
+    border: none;
+    color: #070708;
+    font-size: 1.07vw;
+    text-transform: uppercase;
+}
+
+.c-button_delete-event {
+    background: #c7b6ae;
+    color: #070708;
+    font-size: 1.07vw;
+    text-transform: uppercase;
+    border: none;
+    padding: 7px 16px;
+    outline: none;
+
+}
+
+.c-button_edit {
+    background: #b2d179;
+    border: none;
+    color: #070708;
+    font-size: 1.07vw;
+    text-transform: uppercase;
+    padding: 7px 25px;
+    outline: none;
+}
+
+.c-hide-block__close-button{
+    background-image: url(../img/x-close.png);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 8px;
+    height: 8px;
+}
+
+/*Кінець вспливаючого вікна*/
+/*стилі для іконок awesome*/
+.c-calendar-icon {
+    /*margin-top: 1.5vh;*/
+/*    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 20%;*/
+    /*text-align: center;*/
+}
+
+/*кінець стилів для іконок awesome*/
+
+/*Стилі для форми події */
+
+.c-form-wrapper {
+    background: #e1e1e1;
+    padding: 20px 20px;
+}
+
+.c-form-create {
+    width: 100%;
+}
+
+.c-button_save {
+    background: #86af49;
+}
+
+.c-button_cancel {
+    background: #8a9a9a;
+}
+
+.c-button_delete {
+    background: #b7a298;
+}
+
+.c-icon-button {
+    display: inline-block;
+    color: #fff;
+    font-family: Awesome, sans-serif;
+    font-size: 1.07vw;
+    line-height: 2.00vh;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.c-icon-button_black {
+    color: #000;
+}
+
+.c-icon-button_grey {
+    color: #484947;
+}
+
+.c-form-input {
+    display: block;
+    margin-top: 20px;
+}
+
+.c-form-event {
+    width: 39vw;
+    height: 2.75vh;
+    min-height: 21px;
+
+}
+
+.c-box-date, .c-all-day {
+    margin-top: 10px;
+}
+
+/* Form for confirm deletion */
+
+.c-form-confirm_delete{
+    display: none;
+    position:absolute;
+    top: 35vh;
+    left: 35vw;
+    width: 24.22vw;
+    min-height: 16.93vh;
+    border: 2px #626262 solid;
+    background-color: #e1e1e1;
+    z-index: 1001;
+}
+
+.c-form-confirm_question{
+    padding: 3.9vh 2vw 2.9vh 2vw;
+    font-family: "Verdana", sans-serif;
+    font-size: 1.07vw;
+    line-height: 4.3vh;
+    text-align: center;
+}
+
+.c-button_x-close{
+    position: absolute;
+    top: 1.3vh;
+    left: 22.8vw;
+    width: 0.88vw;
+    height: 1.236vh;
+}
+
+.c-button_yes,
+.c-button_no{
+    width: 5.37vw;
+    height: 3.52vh;
+    /*border-radius: 0;*/
+    color: #110400;
+    line-height: 1.4vh;
+}
+
+.c-button_no{
+    background-color: #c7b6ae;
+}
+
+.c-button_yes{
+    margin: 0.5vh 3.3vw 1vh 5vw;
+}
+
+/*Кінець форми*/
+
+/* END Callendar CSS*/
+
+/* --- end of CSS for main block --- */
+
+.c-button p {
+    right: 13%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*---------------------Day--------------------------*/
+
+
+/*Кнопки перемикання режимів*/
+.c-nav__day {
+    margin-left: 2%;
+}
+
+/*Стилі для сітки дня*/
+
+.c-wrapper_day {
+     height: 74.1vh;
+      margin: 8px 0 8px 14px;
+      overflow: auto;
+}
+
+.c-day-table {
+    width: 100%;
+}
+
+.c-day-table__all-cells {
+    vertical-align: top;
+    border: 1px solid #888;
+}
+
+.c-day-table__time-box {
+    width: 7.52vw;
+    height: 7.31vh;
+    background-color: #fff;
+    text-align: right;
+}
+
+.c-day-table__text {
+    display: inline-block;
+    padding: 8px;
+    font-family: Verdana;
+    font-size: 1.07vw;
+}
+
+.c-day-table__event-line {
+    width: 72.7vw;
+    background-color: #f7f7f7;
+    vertical-align: middle;
+}
+
+.c-day-table_grey {
+    background-color: #d7d7d7;
+}
+
+.c-day-table_orange {
+    background-color: #d9ab9e;
+}
+
+.c-day-table__events {
+    padding-left: 15px;
+    font-family: Verdana;
+    font-size: 1.07vw;
+}
+
+
+/*Стилі для сітки дня*/
+
+/*-------------------End Day-------------------------*/
+
+/*Стили для сетки недели*/
+.c-week-events{
+    font-family: Verdana;
+    font-size: 1vw;
+    margin-left: 15px;
+    width: 88%;
+    /*height: 74.1vh;*/
+    height: 80vh;
+    min-height: 597px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.c-week-data__all-cells {
+    background: #f7f7f7;
+    border: 1px solid #888;
+    height: 3.72vh;
+    min-height: 27px;
+    text-align: center;
+    vertical-align: middle;
+    width: 3%;
+}
+
+.c-week-data_time-cells {
+    background: #fff;
+}
+
+.c-week-data_header-cells {
+    background: #82b21e;
+    border: 1px solid #888;
+    border-bottom: none;
+    border-right: none;
+    color: #fff;
+    text-align: center;
+    height: 4.83vh;
+    vertical-align: middle;
+}
+
+.c-week-data_empty-cells {
+    background: none;
+    border-top: none;
+    border-left: none;
+
+}
+
+.c-week-data__day{
+    display: block;
+}
+
+.c-week-events__table{
+    border-collapse: collapse;
+    /*Разобраться, почему 100% не влазит в блок, и почему появляется горизонтальный скролл*/
+    width: calc(100% - 1px);
+}
+
+/*------------------- Конец стилей для сетки недели -----------*/

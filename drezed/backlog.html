@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Backlog</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.backlog.css">
+	<script src="js/epic_js.js"></script>
+</head>
+<body class="backlog-page">
+<div class="wrapper">
+	<nav class="left-sidebar">
+        <ul class="left-sidebar__tool-list">
+            <li class="left-sidebar__tool">
+                <a href="#" class="left-sidebar__link">
+                    <span class="left-sidebar__icon">&#xf0eb;</span>
+                    <span class="left-sidebar__title">Project</span>
+                </a>
+            </li>
+            <li class="left-sidebar__tool">
+                <a href="chat.html" class="left-sidebar__link">
+                    <span class="left-sidebar__icon left-sidebar_icon-chat">&#xf086;</span>
+                    <span class="left-sidebar__title">Chat</span>
+                </a>
+            </li>
+            <li class="left-sidebar__tool">
+                <a href="backlog.html" class="left-sidebar__link">
+                    <span class="left-sidebar__icon left-sidebar_icon-backlog">&#xf0ae;</span>
+                    <span class="left-sidebar__title">Backlog</span>
+                </a>
+            </li>
+            <li class="left-sidebar__tool">
+                <a href="table.html" class="left-sidebar__link">
+                    <span class="left-sidebar__icon left-sidebar_icon-board">&#xf022;</span>
+                    <span class="left-sidebar__title">Board</span>
+                </a>
+            </li>
+            <li class="left-sidebar__tool">
+                <a href="calendar.html" class="left-sidebar__link">
+                    <span class="left-sidebar__icon left-sidebar_icon-calendar">&#xf073;</span>
+                    <span class="left-sidebar__title">Calendar</span>
+                </a>
+            </li>
+            <li class="left-sidebar__tool">
+                <a href="#" class="left-sidebar__link">
+                    <span class="left-sidebar__icon left-sidebar_icon-settings">&#xf085;</span>
+                    <span class="left-sidebar__title">Settings</span>
+                </a>
+            </li>
+        </ul>
+	</nav>
+    <div class="right-wrapper">
+	    <header class="header">
+            <img src="img/logo.png" alt="logo" class="header__logo">
+            <div class="header__toolbar">
+            	<div class="header__toolbar__sprint">
+              		<a class="btn" href="#" >Start Sprint</a>
+             	</div>
+                <div class="header__switch-container">
+                    <label class="header__switch">
+                        <input class="header__checkbox" type="checkbox" name="header-switcher" checked>
+                        <span class="header__slider"></span>
+                    </label>
+                </div>
+                <div class="header__icons">
+                    <span class="header__new-alert">
+                        &#xf0f3;
+                        <span class="header__alert-count">29</span>
+                    </span>
+                    <img src="img/avatar.png" alt="Ava" class="header__avatar">
+                    <span class="header__logout">&#xf08b;</span>
+                </div>
+            </div>
+        </header>
+		<main class="b-main">
+			<div class="b-steps">
+				<div class="b-steps__step active done">
+					<em>
+						Создайте
+						<strong>Epic</strong>
+					</em>
+					<div class="b-steps__step__help">
+						Epic - это ...
+						<a href="#">подробнее</a>
+					</div>
+				</div>
+				<div class="b-steps__step active done">
+					<em>
+						Создайте
+						<strong>Story</strong>
+					</em>
+					<div class="b-steps__step__help">
+						Story - это ...
+						<a href="#">подробнее</a>
+					</div>
+				</div>
+				<div class="b-steps__step active done">
+					<em>
+						Назначте
+						<strong>Priorities</strong>
+					</em>
+					<div class="b-steps__step__help">
+						SMART - это ...
+						<a href="#">подробнее</a>
+					</div>
+				</div>
+				<div class="b-steps__step active">
+					<em>
+						Создайте
+						<strong>Sprint</strong>
+					</em>
+					<div class="b-steps__step__help">
+						Sprint - это ...
+						<a href="#">подробнее</a>
+					</div>
+				</div>
+			</div>
+			<div class="b-main-column">
+				<div class="b-epic-block ">
+					<div class="b-epic-block__create-form">
+						<textarea rows='1' data-min-rows='1' placeholder='Создать EPIC'></textarea>
+					</div>
+					<div class="b-epic-block__epic-box">
+						<h1>EPIC 1</h1>
+						<p>Пользователь может работать с беклогами и спринтами</p>
+					</div>
+				</div>
+				<h2>Stories</h2>
+				<div class="b-story-block story-active drop-active"><!--  story-active story-active_red story-active_yellow drop-active-->
+					<div class="b-story-block__add-story">
+						<textarea placeholder="Add Story +"></textarea>
+					</div>
+					<div class="b-story-block__content">
+						<div class="b-story-block__right-panel">
+							<a class="b-story-block__arrow" href="#">
+								<i class="fa fa-arrow-up" aria-hidden="true"></i>
+							</a>
+						</div>
+						<p>Пользователь назначает ответственных по задачам (каждый в команде может назначать сам себе, а не один назначает всем)</p>
+						<a class="b-story-block__opener" href="#">
+							<i class="fa fa-plus-square-o"></i>
+							<i class="fa fa-minus-square-o" aria-hidden="true"></i>
+						</a>
+						<div class="b-story-block__drop">
+							<button class="b-button__add-task">+ Add task</button>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+						</div>
+					</div>
+`				</div>
+				<div class="b-story-block story-active story-active_yellow"><!--  story-active story-active_red story-active_yellow drop-active-->
+					<div class="b-story-block__add-story">
+						<textarea placeholder="Add Story +"></textarea>
+					</div>
+					<div class="b-story-block__content">
+						<div class="b-story-block__right-panel">
+							<a class="b-story-block__arrow" href="#">
+								<i class="fa fa-arrow-up" aria-hidden="true"></i>
+							</a>
+						</div>
+						<p>Пользователь назначает ответственных по задачам (каждый в команде может назначать сам себе, а не один назначает всем)</p>
+						<a class="b-story-block__opener" href="#">
+							<i class="fa fa-plus-square-o"></i>
+							<i class="fa fa-minus-square-o" aria-hidden="true"></i>
+						</a>
+						<div class="b-story-block__drop">
+							<button class="b-button__add-task">+ Add task</button>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+						</div>
+					</div>
+				</div>
+				<div class="b-story-block story-active story-active_red"><!--  story-active story-active_red story-active_yellow drop-active-->
+					<div class="b-story-block__add-story">
+						<textarea placeholder="Add Story +"></textarea>
+					</div>
+					<div class="b-story-block__content">
+						<div class="b-story-block__right-panel">
+							<a class="b-story-block__arrow" href="#">
+								<i class="fa fa-arrow-up" aria-hidden="true"></i>
+							</a>
+						</div>
+						<p>Пользователь назначает ответственных по задачам (каждый в команде может назначать сам себе, а не один назначает всем)</p>
+						<a class="b-story-block__opener" href="#">
+							<i class="fa fa-plus-square-o"></i>
+							<i class="fa fa-minus-square-o" aria-hidden="true"></i>
+						</a>
+						<div class="b-story-block__drop">
+							<button class="b-button__add-task">+ Add task</button>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="b-main-column">
+				<div class="b-epic-block" id="epicblock">
+					<div class="b-epic-block__create-form">
+						<textarea rows='1' data-min-rows='1' placeholder='Создать EPIC' id="createepic"></textarea>
+					</div>
+					<div class="b-epic-block__epic-box">
+						<h1>EPIC 1</h1>
+						<p>Пользователь может работать с беклогами и спринтами</p>
+					</div>
+				</div>
+				<h2>Stories</h2>
+				<div class="b-story-block"><!--  story-active story-active_red story-active_yellow drop-active-->
+					<div class="b-story-block__add-story">
+						<textarea placeholder="Add Story +"></textarea>
+					</div>
+					<div class="b-story-block__content">
+						<div class="b-story-block__right-panel">
+							<a class="b-story-block__arrow" href="#">
+								<i class="fa fa-arrow-up" aria-hidden="true"></i>
+							</a>
+						</div>
+						<p>Пользователь назначает ответственных по задачам (каждый в команде может назначать сам себе, а не один назначает всем)</p>
+						<a class="b-story-block__opener" href="#">
+							<i class="fa fa-plus-square-o"></i>
+							<i class="fa fa-minus-square-o" aria-hidden="true"></i>
+						</a>
+						<div class="b-story-block__drop">
+							<button class="b-button__add-task">+ Add task</button>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+						</div>
+					</div>
+				</div>
+				<div class="b-story-block "><!--  story-active story-active_red story-active_yellow drop-active-->
+					<div class="b-story-block__add-story">
+						<textarea placeholder="Add Story +"></textarea>
+					</div>
+					<div class="b-story-block__content">
+						<div class="b-story-block__right-panel">
+							<a class="b-story-block__arrow" href="#">
+								<i class="fa fa-arrow-up" aria-hidden="true"></i>
+							</a>
+						</div>
+						<p>Пользователь назначает ответственных по задачам (каждый в команде может назначать сам себе, а не один назначает всем)</p>
+						<a class="b-story-block__opener" href="#">
+							<i class="fa fa-plus-square-o"></i>
+							<i class="fa fa-minus-square-o" aria-hidden="true"></i>
+						</a>
+						<div class="b-story-block__drop">
+							<button class="b-button__add-task">+ Add task</button>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+						</div>
+					</div>
+				</div>
+				<div class="b-story-block"><!--  story-active story-active_red story-active_yellow drop-active-->
+					<div class="b-story-block__add-story">
+						<textarea placeholder="Add Story +"></textarea>
+					</div>
+					<div class="b-story-block__content">
+						<div class="b-story-block__right-panel">
+							<a class="b-story-block__arrow" href="#">
+								<i class="fa fa-arrow-up" aria-hidden="true"></i>
+							</a>
+						</div>
+						<p>Пользователь назначает ответственных по задачам (каждый в команде может назначать сам себе, а не один назначает всем)</p>
+						<a class="b-story-block__opener" href="#">
+							<i class="fa fa-plus-square-o"></i>
+							<i class="fa fa-minus-square-o" aria-hidden="true"></i>
+						</a>
+						<div class="b-story-block__drop">
+							<button class="b-button__add-task">+ Add task</button>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="b-main-column">
+				<div class="b-epic-block">
+					<div class="b-epic-block__create-form">
+						<textarea rows='1' data-min-rows='1' placeholder='Создать EPIC'></textarea>
+					</div>
+					<div class="b-epic-block__epic-box">
+						<h1>EPIC 1</h1>
+						<p>Пользователь может работать с беклогами и спринтами</p>
+					</div>
+				</div>
+				<h2>Stories</h2>
+				<div class="b-story-block"><!--  story-active story-active_red story-active_yellow drop-active-->
+					<div class="b-story-block__add-story">
+						<textarea placeholder="Add Story +"></textarea>
+					</div>
+					<div class="b-story-block__content">
+						<div class="b-story-block__right-panel">
+							<a class="b-story-block__arrow" href="#">
+								<i class="fa fa-arrow-up" aria-hidden="true"></i>
+							</a>
+						</div>
+						<p>Пользователь назначает ответственных по задачам (каждый в команде может назначать сам себе, а не один назначает всем)</p>
+						<a class="b-story-block__opener" href="#">
+							<i class="fa fa-plus-square-o"></i>
+							<i class="fa fa-minus-square-o" aria-hidden="true"></i>
+						</a>
+						<div class="b-story-block__drop">
+							<button class="b-button__add-task">+ Add task</button>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+						</div>
+					</div>
+				</div>
+				<div class="b-story-block "><!--  story-active story-active_red story-active_yellow drop-active-->
+					<div class="b-story-block__add-story">
+						<textarea placeholder="Add Story +"></textarea>
+					</div>
+					<div class="b-story-block__content">
+						<div class="b-story-block__right-panel">
+							<a class="b-story-block__arrow" href="#">
+								<i class="fa fa-arrow-up" aria-hidden="true"></i>
+							</a>
+						</div>
+						<p>Пользователь назначает ответственных по задачам (каждый в команде может назначать сам себе, а не один назначает всем)</p>
+						<a class="b-story-block__opener" href="#">
+							<i class="fa fa-plus-square-o"></i>
+							<i class="fa fa-minus-square-o" aria-hidden="true"></i>
+						</a>
+						<div class="b-story-block__drop">
+							<button class="b-button__add-task">+ Add task</button>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+						</div>
+					</div>
+				</div>
+				<div class="b-story-block"><!--  story-active story-active_red story-active_yellow drop-active-->
+					<div class="b-story-block__add-story">
+						<textarea placeholder="Add Story +"></textarea>
+					</div>
+					<div class="b-story-block__content">
+						<div class="b-story-block__right-panel">
+							<a class="b-story-block__arrow" href="#">
+								<i class="fa fa-arrow-up" aria-hidden="true"></i>
+							</a>
+						</div>
+						<p>Пользователь назначает ответственных по задачам (каждый в команде может назначать сам себе, а не один назначает всем)</p>
+						<a class="b-story-block__opener" href="#">
+							<i class="fa fa-plus-square-o"></i>
+							<i class="fa fa-minus-square-o" aria-hidden="true"></i>
+						</a>
+						<div class="b-story-block__drop">
+							<button class="b-button__add-task">+ Add task</button>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="b-main-column">
+				<div class="b-epic-block">
+					<div class="b-epic-block__create-form">
+						<textarea rows='1' data-min-rows='1' placeholder='Создать EPIC'></textarea>
+					</div>
+					<div class="b-epic-block__epic-box">
+						<h1>EPIC 1</h1>
+						<p>Пользователь может работать с беклогами и спринтами</p>
+					</div>
+				</div>
+				<h2>Stories</h2>
+				<div class="b-story-block"><!--  story-active story-active_red story-active_yellow drop-active-->
+					<div class="b-story-block__add-story">
+						<textarea placeholder="Add Story +"></textarea>
+					</div>
+					<div class="b-story-block__content">
+						<div class="b-story-block__right-panel">
+							<a class="b-story-block__arrow" href="#">
+								<i class="fa fa-arrow-up" aria-hidden="true"></i>
+							</a>
+						</div>
+						<p>Пользователь назначает ответственных по задачам (каждый в команде может назначать сам себе, а не один назначает всем)</p>
+						<a class="b-story-block__opener" href="#">
+							<i class="fa fa-plus-square-o"></i>
+							<i class="fa fa-minus-square-o" aria-hidden="true"></i>
+						</a>
+						<div class="b-story-block__drop">
+							<button class="b-button__add-task">+ Add task</button>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+						</div>
+					</div>
+				</div>
+				<div class="b-story-block "><!--  story-active story-active_red story-active_yellow drop-active-->
+					<div class="b-story-block__add-story">
+						<textarea placeholder="Add Story +"></textarea>
+					</div>
+					<div class="b-story-block__content">
+						<div class="b-story-block__right-panel">
+							<a class="b-story-block__arrow" href="#">
+								<i class="fa fa-arrow-up" aria-hidden="true"></i>
+							</a>
+						</div>
+						<p>Пользователь назначает ответственных по задачам (каждый в команде может назначать сам себе, а не один назначает всем)</p>
+						<a class="b-story-block__opener" href="#">
+							<i class="fa fa-plus-square-o"></i>
+							<i class="fa fa-minus-square-o" aria-hidden="true"></i>
+						</a>
+						<div class="b-story-block__drop">
+							<button class="b-button__add-task">+ Add task</button>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+						</div>
+					</div>
+				</div>
+				<div class="b-story-block"><!--  story-active story-active_red story-active_yellow drop-active-->
+					<div class="b-story-block__add-story">
+						<textarea placeholder="Add Story +"></textarea>
+					</div>
+					<div class="b-story-block__content">
+						<div class="b-story-block__right-panel">
+							<a class="b-story-block__arrow" href="#">
+								<i class="fa fa-arrow-up" aria-hidden="true"></i>
+							</a>
+						</div>
+						<p>Пользователь назначает ответственных по задачам (каждый в команде может назначать сам себе, а не один назначает всем)</p>
+						<a class="b-story-block__opener" href="#">
+							<i class="fa fa-plus-square-o"></i>
+							<i class="fa fa-minus-square-o" aria-hidden="true"></i>
+						</a>
+						<div class="b-story-block__drop">
+							<button class="b-button__add-task">+ Add task</button>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+							<div class="b-story-block__task">Пользователь может изменять название задачи</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+</div>
+</body>
+</html>
